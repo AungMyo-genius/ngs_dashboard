@@ -1,0 +1,75 @@
+@import './_config'
+
+.grid-container
+    display: grid
+    grid-template-columns: 1fr 11fr
+    
+
+.sidebar
+    background: $sideBarbg
+    
+    &_logo
+        padding:10px
+        width:100%
+        display: flex
+        justify-content: center
+        align-item:center
+        
+        img
+            width: 50px
+            height: 50px
+        
+        p
+            font-size: 30px
+            padding:0.3125rem 10px
+            color: $textColor
+    
+    &_profile
+        padding:20px
+        text-align: center
+
+        img
+            width: 75px
+            height: 75px
+            border-radius: 50%
+        
+        p
+            margin-top: 10px
+            margin-bottom: 15px
+            color: $textColor
+        
+        ul
+            display: flex
+
+            li
+                font-size: 14px
+                padding: 0px 15px
+                color: $textColor
+                &:nth-of-type(2)
+                    border-left:1px solid black
+                    border-right:1px solid black
+                &:hover
+                    background: $buttonBg
+                    color: $buttonColor
+    
+    &_menu
+        li
+            padding: 13px 15px
+            a
+                color:$textColor
+
+        li.active
+            background: $buttonBg
+            color:$buttonColor
+            border-radius: 20px
+            a 
+                color: $buttonColor
+
+
+            
+                    
+
+            
+        
+            
+
